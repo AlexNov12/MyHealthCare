@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDiDWEnmnsejfEWKpxVUGy1_N6X5CUyBY8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>271740050008</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>AleksandrNovikov.My-Health-Care</string>
+	<key>PROJECT_ID</key>
+	<string>myhealthcare-b5b92</string>
+	<key>STORAGE_BUCKET</key>
+	<string>myhealthcare-b5b92.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:271740050008:ios:42c9da20ff5ba18f1d882d</string>
+</dict>
+</plist>
