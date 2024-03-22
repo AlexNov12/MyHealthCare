@@ -16,6 +16,14 @@
 		B3BB2D192B98ED7800255007 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB2D182B98ED7800255007 /* LoginViewController.swift */; };
 		B3BB2D1B2B98ED9500255007 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB2D1A2B98ED9500255007 /* WelcomeViewController.swift */; };
 		B3BB2D1D2B98EDAB00255007 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB2D1C2B98EDAB00255007 /* RegisterViewController.swift */; };
+		B3BB2D1F2B9A472D00255007 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3BB2D1E2B9A472D00255007 /* GoogleService-Info.plist */; };
+		B3BB2D2E2B9A4C3A00255007 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B3BB2D2D2B9A4C3A00255007 /* FirebaseAuth */; };
+		B3BB2D3A2B9A4C3A00255007 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B3BB2D392B9A4C3A00255007 /* FirebaseFirestore */; };
+		B3BB2D3E2B9A4C3A00255007 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B3BB2D3D2B9A4C3A00255007 /* FirebaseFirestoreSwift */; };
+		B3BB2D482B9A4C3A00255007 /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = B3BB2D472B9A4C3A00255007 /* FirebaseInstallations */; };
+		B3BB2D952B9D9ED500255007 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB2D942B9D9ED500255007 /* WeatherManager.swift */; };
+		B3BB2D972B9DB4F300255007 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB2D962B9DB4F300255007 /* WeatherData.swift */; };
+		B3BB2D992B9DB83800255007 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BB2D982B9DB83800255007 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +38,10 @@
 		B3BB2D182B98ED7800255007 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B3BB2D1A2B98ED9500255007 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		B3BB2D1C2B98EDAB00255007 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B3BB2D1E2B9A472D00255007 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B3BB2D942B9D9ED500255007 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		B3BB2D962B9DB4F300255007 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		B3BB2D982B9DB83800255007 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3BB2D3A2B9A4C3A00255007 /* FirebaseFirestore in Frameworks */,
+				B3BB2D3E2B9A4C3A00255007 /* FirebaseFirestoreSwift in Frameworks */,
+				B3BB2D2E2B9A4C3A00255007 /* FirebaseAuth in Frameworks */,
+				B3BB2D482B9A4C3A00255007 /* FirebaseInstallations in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,16 +80,44 @@
 			children = (
 				B3BB2CF62B94E91E00255007 /* AppDelegate.swift */,
 				B3BB2CF82B94E91E00255007 /* SceneDelegate.swift */,
+				B3BB2D932B9D9EA400255007 /* Model */,
+				B3BB2D922B9D9C9400255007 /* View */,
+				B3BB2D912B9D969300255007 /* Controllers */,
+				B3BB2CFF2B94E91F00255007 /* Assets.xcassets */,
+				B3BB2D012B94E91F00255007 /* LaunchScreen.storyboard */,
+				B3BB2D042B94E92000255007 /* Info.plist */,
+				B3BB2D1E2B9A472D00255007 /* GoogleService-Info.plist */,
+			);
+			path = "My Health Care";
+			sourceTree = "<group>";
+		};
+		B3BB2D912B9D969300255007 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				B3BB2D1A2B98ED9500255007 /* WelcomeViewController.swift */,
 				B3BB2D182B98ED7800255007 /* LoginViewController.swift */,
 				B3BB2D1C2B98EDAB00255007 /* RegisterViewController.swift */,
 				B3BB2D122B97A66F00255007 /* StartPageViewController.swift */,
-				B3BB2CFC2B94E91E00255007 /* Main.storyboard */,
-				B3BB2CFF2B94E91F00255007 /* Assets.xcassets */,
-				B3BB2D012B94E91F00255007 /* LaunchScreen.storyboard */,
-				B3BB2D042B94E92000255007 /* Info.plist */,
 			);
-			path = "My Health Care";
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B3BB2D922B9D9C9400255007 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3BB2CFC2B94E91E00255007 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3BB2D932B9D9EA400255007 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3BB2D942B9D9ED500255007 /* WeatherManager.swift */,
+				B3BB2D962B9DB4F300255007 /* WeatherData.swift */,
+				B3BB2D982B9DB83800255007 /* WeatherModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,6 +136,12 @@
 			dependencies = (
 			);
 			name = "My Health Care";
+			packageProductDependencies = (
+				B3BB2D2D2B9A4C3A00255007 /* FirebaseAuth */,
+				B3BB2D392B9A4C3A00255007 /* FirebaseFirestore */,
+				B3BB2D3D2B9A4C3A00255007 /* FirebaseFirestoreSwift */,
+				B3BB2D472B9A4C3A00255007 /* FirebaseInstallations */,
+			);
 			productName = "My Health Care";
 			productReference = B3BB2CF32B94E91E00255007 /* My Health Care.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +170,9 @@
 				Base,
 			);
 			mainGroup = B3BB2CEA2B94E91E00255007;
+			packageReferences = (
+				B3BB2D202B9A4C3A00255007 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B3BB2CF42B94E91E00255007 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3BB2D032B94E91F00255007 /* LaunchScreen.storyboard in Resources */,
+				B3BB2D1F2B9A472D00255007 /* GoogleService-Info.plist in Resources */,
 				B3BB2D002B94E91F00255007 /* Assets.xcassets in Resources */,
 				B3BB2CFE2B94E91E00255007 /* Main.storyboard in Resources */,
 			);
@@ -150,8 +204,11 @@
 				B3BB2D192B98ED7800255007 /* LoginViewController.swift in Sources */,
 				B3BB2CF72B94E91E00255007 /* AppDelegate.swift in Sources */,
 				B3BB2CF92B94E91E00255007 /* SceneDelegate.swift in Sources */,
+				B3BB2D952B9D9ED500255007 /* WeatherManager.swift in Sources */,
+				B3BB2D992B9DB83800255007 /* WeatherModel.swift in Sources */,
 				B3BB2D1D2B98EDAB00255007 /* RegisterViewController.swift in Sources */,
 				B3BB2D1B2B98ED9500255007 /* WelcomeViewController.swift in Sources */,
+				B3BB2D972B9DB4F300255007 /* WeatherData.swift in Sources */,
 				B3BB2D132B97A66F00255007 /* StartPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,12 +369,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "myComputer.My-Health-Care";
+				PRODUCT_BUNDLE_IDENTIFIER = "AleksandrNovikov.My-Health-Care";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -340,12 +398,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "myComputer.My-Health-Care";
+				PRODUCT_BUNDLE_IDENTIFIER = "AleksandrNovikov.My-Health-Care";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -375,6 +434,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3BB2D202B9A4C3A00255007 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.22.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3BB2D2D2B9A4C3A00255007 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3BB2D202B9A4C3A00255007 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B3BB2D392B9A4C3A00255007 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3BB2D202B9A4C3A00255007 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		B3BB2D3D2B9A4C3A00255007 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3BB2D202B9A4C3A00255007 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		B3BB2D472B9A4C3A00255007 /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3BB2D202B9A4C3A00255007 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3BB2CEB2B94E91E00255007 /* Project object */;
 }

@@ -18,6 +18,7 @@ class StartPageViewController: UIViewController {
     var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
+        print("Работает viewDidLoad")
         super.viewDidLoad()
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
