@@ -18,7 +18,7 @@ class RegisterViewController: UIViewController {
         if let email = emailTextfield.text, let password = passwordTextfield.text {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 if let e = error{
-                    let alert = UIAlertController(title: "Ошибка", message: "Произошла ошибка при регистрации. Пожалуйста, проверьте ваш логин и пароль и попробуйте снова.", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Ошибка", message: "Произошла ошибка при регистрации. Пожалуйста, проверьте ваш логин и пароль  и попробуйте снова.", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style:.default, handler: nil))
                     
                     if let presentingViewController = self.presentingViewController {
